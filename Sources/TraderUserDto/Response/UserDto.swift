@@ -1,5 +1,5 @@
 //
-//  ClientDto.swift
+//  UserDto.swift
 //  UserDto
 //
 //  Created by Victor Chernykh on 07.03.2024.
@@ -8,7 +8,7 @@
 import Foundation
 
 /// User public data
-public struct ClientDto: Codable {
+public struct UserDto: Codable {
     // MARK: - Stored properties
     public var id: UUID?
     public var email: String
