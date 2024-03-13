@@ -20,11 +20,11 @@ public struct UserDto: Codable {
     // MARK: - Init
     public init(
         id: UUID? = nil,
-        email: String,
-        firstName: String,
+        email: String = "",
+        firstName: String = "",
         lastName: String? = nil,
-		lang: Lang,
-		tariff: Tariff
+		lang: Lang = .en,
+		tariff: Tariff = .free
     ) {
         self.id = id
         self.email = email
