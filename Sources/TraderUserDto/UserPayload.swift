@@ -21,7 +21,7 @@ public struct UserPayload {
 		id: UUID,
 		email: String,
 		firstName: String,
-		lastName: String,
+		lastName: String?,
 		lang: Lang,
 		role: RoleType,
 		tariff: Tariff,
