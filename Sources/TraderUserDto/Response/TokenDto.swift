@@ -10,17 +10,9 @@ import Foundation
 public struct TokenDto: Codable {
     // MARK: - Stored properties
     public let access: String
-    public let expiresAt: Date
-    public let refresh: String
     
     // MARK: - Init
-    public init(
-        access: String,
-        expiresAt: Date,
-        refresh: String
-    ) {
+    public init(access: String) {
         self.access = access
-        self.expiresAt = expiresAt
-        self.refresh = refresh
     }
 }
