@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct UserPayload {
+public struct UserPayload: Codable {
 	public let id: UUID
 	public let email: String
 	public let firstName: String
