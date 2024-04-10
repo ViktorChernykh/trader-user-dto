@@ -17,7 +17,7 @@ public struct UserPayload {
 	public let tariff: Tariff
 	public let token: String
 
-	init(
+	public init(
 		id: UUID,
 		email: String,
 		firstName: String,
