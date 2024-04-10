@@ -16,4 +16,24 @@ public struct UserPayload {
 	public let role: RoleType
 	public let tariff: Tariff
 	public let token: String
+
+	init(
+		id: UUID,
+		email: String,
+		firstName: String,
+		lastName: String,
+		lang: Lang,
+		role: RoleType,
+		tariff: Tariff,
+		token: String
+	) {
+		self.id = id
+		self.email = email
+		self.firstName = firstName
+		self.lastName = lastName
+		self.lang = lang
+		self.role = role
+		self.tariff = tariff
+		self.token = token
+	}
 }
