@@ -8,7 +8,7 @@
 import Foundation
 
 public struct UserPayload: Codable {
-	public let id: UUID
+	public let sub: UUID
 	public let email: String
 	public let firstName: String
 	public let lastName: String?
@@ -18,7 +18,7 @@ public struct UserPayload: Codable {
 	public let token: String
 
 	public init(
-		id: UUID,
+		sub: UUID,
 		email: String,
 		firstName: String,
 		lastName: String?,
@@ -27,7 +27,7 @@ public struct UserPayload: Codable {
 		tariff: Tariff,
 		token: String
 	) {
-		self.id = id
+		self.sub = sub
 		self.email = email
 		self.firstName = firstName
 		self.lastName = lastName
