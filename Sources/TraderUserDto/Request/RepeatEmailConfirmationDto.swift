@@ -6,7 +6,7 @@
 //
 
 /// Data transfer object to repeat email for confirmation
-public struct RepeatEmailConfirmationDto: Codable {
+public struct RepeatEmailConfirmationDto: Codable, Sendable {
     // MARK: - Stored properties
     public let email: String
     

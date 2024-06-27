@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct TokenDto: Codable {
+public struct TokenDto: Codable, Sendable {
     // MARK: - Stored properties
     public let access: String
     

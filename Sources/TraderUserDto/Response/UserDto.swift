@@ -5,10 +5,10 @@
 //  Created by Victor Chernykh on 07.03.2024.
 //
 
-import Foundation
+import struct Foundation.UUID
 
 /// User public data
-public struct UserDto: Codable {
+public struct UserDto: Codable, Sendable {
     // MARK: - Stored properties
     public var id: UUID?
     public var email: String

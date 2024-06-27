@@ -6,7 +6,7 @@
 //
 
 /// Data transfer object with secure token to confirm password change
-public struct PasswordConfirmationDto: Codable {
+public struct PasswordConfirmationDto: Codable, Sendable {
     // MARK: - Stored properties
     public let token: String
     

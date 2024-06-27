@@ -6,7 +6,7 @@
 //
 
 /// Data transfer object with data for user registration
-public struct UserRegistrationDto: Codable {
+public struct UserRegistrationDto: Codable, Sendable {
     // MARK: - Stored properties
     public let email: String
     public let firstName: String

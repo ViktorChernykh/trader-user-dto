@@ -5,7 +5,7 @@
 //  Created by Victor Chernykh on 03.07.2022.
 //
 
-public struct EmailDto: Codable {
+public struct EmailDto: Codable, Sendable {
     // MARK: - Stored properties
     public let to: EmailAddressDto
     public let subject: String

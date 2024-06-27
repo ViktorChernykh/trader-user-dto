@@ -4,9 +4,9 @@
 //
 //  Created by Victor Chernykh on 12.09.2022.
 //
-import Foundation
+import struct Foundation.Date
 
-public struct DateRangeDto: Codable {
+public struct DateRangeDto: Codable, Sendable {
 	// MARK: - Stored properties
     public let from: Date?
     public let to: Date?

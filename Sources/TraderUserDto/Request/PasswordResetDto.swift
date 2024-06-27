@@ -6,7 +6,7 @@
 //
 
 /// Data transfer object with a request to change the password
-public struct PasswordResetDto: Codable {
+public struct PasswordResetDto: Codable, Sendable {
     // MARK: - Stored properties
     public let email: String
     

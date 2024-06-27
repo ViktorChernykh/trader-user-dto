@@ -5,10 +5,10 @@
 //  Created by Victor Chernykh on 03.08.2022.
 //
 
-import Foundation
+import struct Foundation.Date
 
 /// Data transfer object to user list request
-public struct UserListDto: Codable {
+public struct UserListDto: Codable, Sendable {
     // MARK: - Stored properties
     public let isBlock: Bool?
     public let email: String?

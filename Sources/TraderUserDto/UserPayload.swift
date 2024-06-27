@@ -5,9 +5,9 @@
 //  Created by Victor Chernykh on 10.04.2024.
 //
 
-import Foundation
+import struct Foundation.UUID
 
-public struct UserPayload: Codable {
+public struct UserPayload: Codable, Sendable {
 	public let sub: UUID
 	public let email: String
 	public let firstName: String

@@ -5,7 +5,7 @@
 //  Created by Victor Chernykh on 06/03/2024.
 //
 
-public enum Lang: String, CustomStringConvertible, CaseIterable, Codable {
+public enum Lang: String, CustomStringConvertible, CaseIterable, Codable, Sendable {
 	public static let schema = "lang"
 
 	case en

@@ -5,10 +5,11 @@
 //  Created by Victor Chernykh on 07.07.2022.
 //
 
-import Foundation
+import struct Foundation.UUID
+import struct Foundation.Date
 
 /// User public data
-public struct AdminDto: Codable {
+public struct AdminDto: Codable, Sendable {
     // MARK: - Stored properties
     public var id: UUID?
     public var email: String
@@ -38,10 +39,10 @@ public struct AdminDto: Codable {
 		role: RoleType = .client,
 		siwaIdentifier: String? = nil,
 		tariff: Tariff = .free,
-		tryAt: Date = .now,
+		tryAt: Date = .init(),
 		tryCount: Int = 0,
 		twoFactorEnabled: Bool = false,
-		createdAt: Date = .now,
+		createdAt: Date = .init(),
 		updatedAt: Date? = nil
     ) {
         self.id = id

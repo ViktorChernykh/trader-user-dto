@@ -5,9 +5,9 @@
 //  Created by Victor Chernykh on 12.07.2022.
 //
 
-import Foundation
+import struct Foundation.UUID
 
-public struct RoleDto: Codable {
+public struct RoleDto: Codable, Sendable {
     // MARK: - Stored properties
     public let id: UUID?
     public let role: String
