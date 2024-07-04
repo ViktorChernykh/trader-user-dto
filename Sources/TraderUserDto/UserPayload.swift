@@ -5,10 +5,8 @@
 //  Created by Victor Chernykh on 10.04.2024.
 //
 
-import struct Foundation.UUID
-
 public struct UserPayload: Codable, Sendable {
-	public let sub: UUID
+	public let sub: Int
 	public let email: String
 	public let firstName: String
 	public let lastName: String?
@@ -18,7 +16,7 @@ public struct UserPayload: Codable, Sendable {
 	public let token: String
 
 	public init(
-		sub: UUID,
+		sub: Int,
 		email: String,
 		firstName: String,
 		lastName: String?,
