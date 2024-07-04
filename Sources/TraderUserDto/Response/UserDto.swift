@@ -5,12 +5,10 @@
 //  Created by Victor Chernykh on 07.03.2024.
 //
 
-import struct Foundation.UUID
-
 /// User public data
 public struct UserDto: Codable, Sendable {
     // MARK: - Stored properties
-    public var id: UUID?
+    public var id: Int?
     public var email: String
     public var firstName: String
     public var lastName: String?
@@ -19,7 +17,7 @@ public struct UserDto: Codable, Sendable {
 
     // MARK: - Init
     public init(
-        id: UUID? = nil,
+        id: Int? = nil,
         email: String = "",
         firstName: String = "",
         lastName: String? = nil,

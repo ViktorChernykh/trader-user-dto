@@ -5,11 +5,9 @@
 //  Created by Victor Chernykh on 12.07.2022.
 //
 
-import struct Foundation.UUID
-
 public struct RoleDto: Codable, Sendable {
     // MARK: - Stored properties
-    public let id: UUID?
+    public let id: Int?
     public let role: String
     public let description: String
     public let permissions: [String: String]
@@ -17,7 +15,7 @@ public struct RoleDto: Codable, Sendable {
     
     // MARK: - Init
     public init(
-        id: UUID?,
+        id: Int? = nil,
         role: String,
         description: String,
         permissions: [String: String],

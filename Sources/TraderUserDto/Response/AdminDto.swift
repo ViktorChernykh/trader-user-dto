@@ -5,13 +5,12 @@
 //  Created by Victor Chernykh on 07.07.2022.
 //
 
-import struct Foundation.UUID
 import struct Foundation.Date
 
 /// User public data
 public struct AdminDto: Codable, Sendable {
     // MARK: - Stored properties
-    public var id: UUID?
+    public var id: Int?
     public var email: String
 	public var isBlocked: Bool
 	public var isEmailConfirmed: Bool
@@ -29,7 +28,7 @@ public struct AdminDto: Codable, Sendable {
 
     // MARK: - Init
     public init(
-        id: UUID? = nil,
+        id: Int? = nil,
         email: String = "",
 		isBlocked: Bool = false,
 		isEmailConfirmed: Bool,
