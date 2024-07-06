@@ -9,7 +9,8 @@ import struct Foundation.Date
 
 /// Data transfer object to user list request
 public struct UserListDto: Codable, Sendable {
-    // MARK: - Stored properties
+
+    // MARK: Stored properties
     public let isBlock: Bool?
     public let email: String?
     public let page: Int?

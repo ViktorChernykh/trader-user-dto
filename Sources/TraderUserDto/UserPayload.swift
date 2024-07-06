@@ -6,6 +6,11 @@
 //
 
 public struct UserPayload: Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "uk"
+	
+	// MARK: - Stored properties
 	public let sub: Int
 	public let email: String
 	public let firstName: String
@@ -15,6 +20,7 @@ public struct UserPayload: Codable, Sendable {
 	public let tariff: Tariff
 	public let token: String
 
+	// MARK: - Init
 	public init(
 		sub: Int,
 		email: String,

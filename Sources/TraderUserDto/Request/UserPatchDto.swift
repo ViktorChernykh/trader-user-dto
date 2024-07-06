@@ -7,7 +7,8 @@
 
 /// Data transfer object for update user profile.
 public struct UserPatchDto: Codable, Sendable {
-    // MARK: - Stored properties
+
+    // MARK: Stored properties
     public let isBlock: Bool?
     public let firstName: String?
     public let lastName: String?

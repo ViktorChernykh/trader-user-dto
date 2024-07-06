@@ -6,6 +6,10 @@
 //
 
 public struct EmailDto: Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "uc"
+
     // MARK: - Stored properties
     public let to: EmailAddressDto
     public let subject: String

@@ -8,6 +8,10 @@
 import Foundation
 
 public struct TokenDto: Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "ue"
+
     // MARK: - Stored properties
     public let access: String
     

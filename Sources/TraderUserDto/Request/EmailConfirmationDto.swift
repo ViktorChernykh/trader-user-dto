@@ -7,7 +7,8 @@
 
 /// Data transfer object with secure token to confirm email
 public struct EmailConfirmationDto: Codable, Sendable {
-    // MARK: - Stored properties
+
+    // MARK: Stored properties
     public let token: String
     
     // MARK: - Init

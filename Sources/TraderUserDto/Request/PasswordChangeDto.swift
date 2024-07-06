@@ -7,7 +7,8 @@
 
 /// Data transfer object with data for change password
 public struct PasswordChangeDto: Codable, Sendable {
-    // MARK: - Stored properties
+
+    // MARK: Stored properties
     public let currentPassword: String
     public let newPassword: String
     

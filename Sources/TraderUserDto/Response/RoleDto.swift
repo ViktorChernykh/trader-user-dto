@@ -6,6 +6,10 @@
 //
 
 public struct RoleDto: Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "ud"
+
     // MARK: - Stored properties
     public let id: Int?
     public let role: String

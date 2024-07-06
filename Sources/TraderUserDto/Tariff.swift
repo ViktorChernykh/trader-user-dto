@@ -6,6 +6,9 @@
 //
 
 public enum Tariff: String, Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "uj"
 	public static let schema = "tariff"
 
 	case free

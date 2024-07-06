@@ -9,6 +9,10 @@ import struct Foundation.Date
 
 /// User public data
 public struct AdminDto: Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "ua"
+
     // MARK: - Stored properties
     public var id: Int?
     public var email: String

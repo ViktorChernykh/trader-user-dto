@@ -7,6 +7,10 @@
 
 /// User public data
 public struct UserDto: Codable, Sendable {
+
+	// MARK: Static properties
+	public static let code: String = "uf"
+
     // MARK: - Stored properties
     public var id: Int?
     public var email: String
