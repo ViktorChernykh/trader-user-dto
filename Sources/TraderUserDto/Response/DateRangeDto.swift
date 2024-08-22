@@ -8,10 +8,7 @@ import struct Foundation.Date
 
 public struct DateRangeDto: Codable, Sendable {
 
-	// MARK: Static properties
-	public static let code: String = "ub"
-
-	// MARK: - Stored properties
+	// MARK: Stored properties
     public let from: Date?
     public let to: Date?
     

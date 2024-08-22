@@ -5,13 +5,15 @@
 //  Created by Victor Chernykh on 10.04.2024.
 //
 
+import struct Foundation.UUID
+
 public struct UserPayload: Codable, Sendable {
 
 	// MARK: Static properties
 	public static let code: String = "uk"
-	
+
 	// MARK: - Stored properties
-	public let sub: Int
+	public let sub: UUID
 	public let email: String
 	public let firstName: String
 	public let lastName: String?
@@ -22,7 +24,7 @@ public struct UserPayload: Codable, Sendable {
 
 	// MARK: - Init
 	public init(
-		sub: Int,
+		sub: UUID,
 		email: String,
 		firstName: String,
 		lastName: String?,

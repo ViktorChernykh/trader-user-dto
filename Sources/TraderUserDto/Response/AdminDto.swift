@@ -6,15 +6,13 @@
 //
 
 import struct Foundation.Date
+import struct Foundation.UUID
 
 /// User public data
 public struct AdminDto: Codable, Sendable {
 
-	// MARK: Static properties
-	public static let code: String = "ua"
-
-    // MARK: - Stored properties
-    public var id: Int?
+    // MARK: Stored properties
+    public var id: UUID
     public var email: String
 	public var isBlocked: Bool
 	public var isEmailConfirmed: Bool
@@ -32,7 +30,7 @@ public struct AdminDto: Codable, Sendable {
 
     // MARK: - Init
     public init(
-        id: Int? = nil,
+        id: UUID = UUID(),
         email: String = "",
 		isBlocked: Bool = false,
 		isEmailConfirmed: Bool,
