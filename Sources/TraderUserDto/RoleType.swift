@@ -8,7 +8,6 @@
 public enum RoleType: String, Codable, Sendable {
 
 	// MARK: Static properties
-	public static let code: String = "ui"
 	public static let schema = "role_type"
 
 	case guest

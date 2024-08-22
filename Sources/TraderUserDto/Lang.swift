@@ -8,7 +8,6 @@
 public enum Lang: String, CustomStringConvertible, CaseIterable, Codable, Sendable {
 
 	// MARK: Static properties
-	public static let code: String = "uh"
 	public static let schema = "lang"
 
 	case en

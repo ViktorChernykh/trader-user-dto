@@ -9,9 +9,6 @@ import struct Foundation.UUID
 
 public struct UserPayload: Codable, Sendable {
 
-	// MARK: Static properties
-	public static let code: String = "uk"
-
 	// MARK: - Stored properties
 	public let sub: UUID
 	public let email: String
