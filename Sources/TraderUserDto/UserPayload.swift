@@ -10,6 +10,7 @@ import struct Foundation.UUID
 public struct UserPayload: Codable, Sendable {
 
 	// MARK: - Stored properties
+	public let id: UUID
 	public let sub: UUID
 	public let email: String
 	public let firstName: String
@@ -21,6 +22,7 @@ public struct UserPayload: Codable, Sendable {
 
 	// MARK: - Init
 	public init(
+		id: UUID,
 		sub: UUID,
 		email: String,
 		firstName: String,
@@ -30,6 +32,7 @@ public struct UserPayload: Codable, Sendable {
 		tariff: Tariff,
 		token: String
 	) {
+		self.id = id
 		self.sub = sub
 		self.email = email
 		self.firstName = firstName
