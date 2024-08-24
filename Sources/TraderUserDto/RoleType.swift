@@ -11,7 +11,10 @@ public enum RoleType: String, Codable, Sendable {
 	public static let schema = "role_type"
 
 	case guest
-	case client
+	case client1
+	case client2
+	case client3
+	case manager
 	case admin
 	case owner
 	case system
@@ -19,7 +22,10 @@ public enum RoleType: String, Codable, Sendable {
 	public var value: Int {
 		switch self {
 		case .guest: 0
-		case .client: 1
+		case .client1: 1
+		case .client2: 2
+		case .client3: 3
+		case .manager: 6
 		case .admin: 7
 		case .owner: 8
 		case .system: 9
