@@ -21,7 +21,7 @@ public struct UserListDto: Codable, Sendable {
 	public let createdTo: Date?
 	public let updatedFrom: Date?
 	public let updatedTo: Date?
-    
+
     // MARK: - Init
     public init(
 		isBlock: Bool?,

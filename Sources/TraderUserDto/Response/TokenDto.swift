@@ -11,7 +11,7 @@ public struct TokenDto: Codable, Sendable {
 
     // MARK: Stored properties
     public let access: String
-    
+
     // MARK: - Init
     public init(access: String) {
         self.access = access

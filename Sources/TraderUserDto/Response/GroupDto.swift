@@ -8,10 +8,13 @@
 import struct Foundation.UUID
 
 public struct GroupDto: Codable, Sendable {
+
+	// MARK: Stored properties
 	public let id: UUID
 	public let name: String
 	public let groupType: GroupType
 
+	// MARK: - Init
 	public init(
 		id: UUID,
 		name: String,

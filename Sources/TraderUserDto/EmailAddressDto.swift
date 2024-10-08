@@ -7,10 +7,10 @@
 
 public struct EmailAddressDto: Codable, Sendable {
 
-    // MARK: - Stored properties
+    // MARK: Stored properties
     public let address: String
     public let name: String?
-    
+
     // MARK: - Init
     public init(
         address: String,

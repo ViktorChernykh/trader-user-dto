@@ -11,7 +11,7 @@ public struct PasswordChangeDto: Codable, Sendable {
     // MARK: Stored properties
     public let currentPassword: String
     public let newPassword: String
-    
+
     // MARK: - Init
     public init(
         currentPassword: String,

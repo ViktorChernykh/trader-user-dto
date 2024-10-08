@@ -10,7 +10,7 @@ public struct PasswordConfirmationDto: Codable, Sendable {
 
     // MARK: Stored properties
     public let token: String
-    
+
     // MARK: - Init
     public init(token: String) {
         self.token = token

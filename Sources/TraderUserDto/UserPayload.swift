@@ -9,7 +9,7 @@ import struct Foundation.UUID
 
 public struct UserPayload: Codable, Sendable {
 
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let id: UUID
 	public let sub: UUID
 	public let email: String

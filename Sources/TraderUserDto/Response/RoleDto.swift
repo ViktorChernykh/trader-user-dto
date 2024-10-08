@@ -15,7 +15,7 @@ public struct RoleDto: Codable, Sendable {
     public let description: String
     public let permissions: [String: String]
     public let title: String
-    
+
     // MARK: - Init
     public init(
         id: UUID = UUID(),

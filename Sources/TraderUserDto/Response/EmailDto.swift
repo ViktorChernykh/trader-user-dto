@@ -13,7 +13,7 @@ public struct EmailDto: Codable, Sendable {
     public let body: String
     public let from: EmailAddressDto?
     public let replyTo: EmailAddressDto?
-    
+
     // MARK: - Init
     public init(
         to: EmailAddressDto,
