@@ -19,7 +19,7 @@ public struct AdminDto: Codable, Sendable {
     public var firstName: String
     public var lastName: String?
 	public var lang: Lang
-    public var role: RoleType
+    public var roleLevel: Int
 	public var siwaIdentifier: String?
     public var tariff: Tariff
 	public var tryAt: Date
@@ -37,7 +37,7 @@ public struct AdminDto: Codable, Sendable {
         firstName: String = "",
         lastName: String? = nil,
 		lang: Lang = .en,
-		role: RoleType = .client,
+		roleLevel: Int = 1,	// client
 		siwaIdentifier: String? = nil,
 		tariff: Tariff = .free,
 		tryAt: Date = .init(),
@@ -53,7 +53,7 @@ public struct AdminDto: Codable, Sendable {
         self.firstName = firstName
         self.lastName = lastName
         self.lang = lang
-        self.role = role
+        self.roleLevel = roleLevel
         self.siwaIdentifier = siwaIdentifier
         self.tariff = tariff
         self.tryAt = tryAt

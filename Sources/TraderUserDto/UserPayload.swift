@@ -16,7 +16,7 @@ public struct UserPayload: Codable, Sendable {
 	public let firstName: String
 	public let lastName: String?
 	public let lang: Lang
-	public let role: RoleType
+	public let roleLevel: Int
 	public let tariff: Tariff
 	public let token: String
 
@@ -28,7 +28,7 @@ public struct UserPayload: Codable, Sendable {
 		firstName: String,
 		lastName: String?,
 		lang: Lang,
-		role: RoleType,
+		roleLevel: Int,
 		tariff: Tariff,
 		token: String
 	) {
@@ -38,7 +38,7 @@ public struct UserPayload: Codable, Sendable {
 		self.firstName = firstName
 		self.lastName = lastName
 		self.lang = lang
-		self.role = role
+		self.roleLevel = roleLevel
 		self.tariff = tariff
 		self.token = token
 	}
