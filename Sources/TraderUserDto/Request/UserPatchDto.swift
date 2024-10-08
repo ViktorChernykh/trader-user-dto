@@ -12,18 +12,18 @@ public struct UserPatchDto: Codable, Sendable {
     public let isBlock: Bool?
     public let firstName: String?
     public let lastName: String?
-    public let role: RoleType?
+    public let roleLevel: Int?
 
     // MARK: - Init
     public init(
         isBlock: Bool? = nil,
         firstName: String? = nil,
         lastName: String? = nil,
-        role: RoleType? = nil
+		roleLevel: Int? = nil
     ) {
         self.isBlock = isBlock
         self.firstName = firstName
         self.lastName = lastName
-        self.role = role
+        self.roleLevel = roleLevel
     }
 }

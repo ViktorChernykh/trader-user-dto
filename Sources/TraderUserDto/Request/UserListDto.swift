@@ -15,7 +15,7 @@ public struct UserListDto: Codable, Sendable {
     public let email: String?
     public let page: Int?
     public let per: Int?
-	public let role: RoleType?
+	public let roleLevel: Int?
 	public let tariff: Tariff?
 	public let createdFrom: Date?
 	public let createdTo: Date?
@@ -28,7 +28,7 @@ public struct UserListDto: Codable, Sendable {
 		email: String?,
 		page: Int?,
 		per: Int?,
-		role: RoleType?,
+		roleLevel: Int?,
 		tariff: Tariff?,
 		createdFrom: Date?,
 		createdTo: Date?,
@@ -39,7 +39,7 @@ public struct UserListDto: Codable, Sendable {
         self.email = email
         self.page = page
         self.per = per
-        self.role = role
+        self.roleLevel = roleLevel
 		self.tariff = tariff
 		self.createdFrom = createdFrom
 		self.createdTo = createdTo
