@@ -14,7 +14,7 @@ public struct UserDto: Codable, Sendable {
     public var id: UUID
     public var email: String
     public var firstName: String
-    public var lastName: String?
+    public var lastName: String
 	public var lang: Lang
 	public var tariff: Tariff
 
@@ -23,7 +23,7 @@ public struct UserDto: Codable, Sendable {
         id: UUID = UUID(),
         email: String = "",
         firstName: String = "",
-        lastName: String? = nil,
+        lastName: String = "",
 		lang: Lang = .en,
 		tariff: Tariff = .free
     ) {

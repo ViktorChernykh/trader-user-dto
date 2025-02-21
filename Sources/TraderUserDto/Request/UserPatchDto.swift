@@ -27,3 +27,31 @@ public struct UserPatchDto: Codable, Sendable {
         self.roleLevel = roleLevel
     }
 }
+
+extension UserPatchDto {
+	public var csv: String {
+		var _isBlock: String = ""
+		if let isBlock {
+			_isBlock = isBlock ? "1" : "0"
+		}
+		let _roleLevel: String = roleLevel == nil ? "" : "\(roleLevel!)"
+		return "\(_isBlock)\t\(firstName ?? "")\t\(lastName ?? "")\t\(_roleLevel)"
+	}
+}
+
+extension UserPatchDto {
+	public init(_ csv: String) throws {
+		let values: [String] = csv.components(separatedBy: "\t")
+
+		guard values.count == 4 else {
+			throw "UserPatchDto csv decoder error."
+		}
+
+		self.init(
+			isBlock: values[0] == "" ? nil : values[0] == "1",
+			firstName: values[1] == "" ? nil : values[1],
+			lastName: values[2] == "" ? nil : values[2],
+			roleLevel: Int(values[3])
+		)
+	}
+}
