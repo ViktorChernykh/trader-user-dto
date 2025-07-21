@@ -1,6 +1,6 @@
 //
 //  RoleDto.swift
-//  UserDto
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 12.07.2022.
 //

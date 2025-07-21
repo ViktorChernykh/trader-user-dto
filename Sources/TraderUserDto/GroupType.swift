@@ -1,6 +1,6 @@
 //
 //  GroupType.swift
-//
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 24.08.2024.
 //

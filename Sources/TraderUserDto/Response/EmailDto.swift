@@ -1,6 +1,6 @@
 //
 //  EmailDto.swift
-//  UserDto
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 03.07.2022.
 //

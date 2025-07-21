@@ -1,6 +1,6 @@
 //
 //  PasswordConfirmationDto.swift
-//  UserDto
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 10.08.2022.
 //

@@ -1,6 +1,6 @@
 //
 //  DateRangeDto.swift
-//  UserDto
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 12.09.2022.
 //

@@ -1,6 +1,6 @@
 //
 //  UserPayload.swift
-//
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 10.04.2024.
 //
@@ -10,36 +10,32 @@ import struct Foundation.UUID
 public struct UserPayload: Codable, Sendable {
 
 	// MARK: Stored properties
-	public let id: UUID
+	/// Token ID.
+	public let jti: UUID
+	/// User ID.
 	public let sub: UUID
-	public let email: String
 	public let firstName: String
-	public let lastName: String?
 	public let lang: Lang
-	public let roleLevel: Int
+	public let roleLevel: UInt8
 	public let tariff: Tariff
-	public let token: String
+	public let ip: String?
 
 	// MARK: - Init
 	public init(
-		id: UUID,
+		jti: UUID,
 		sub: UUID,
-		email: String,
 		firstName: String,
-		lastName: String?,
 		lang: Lang,
-		roleLevel: Int,
+		roleLevel: UInt8,
 		tariff: Tariff,
-		token: String
+		ip: String?
 	) {
-		self.id = id
+		self.jti = jti
 		self.sub = sub
-		self.email = email
 		self.firstName = firstName
-		self.lastName = lastName
 		self.lang = lang
 		self.roleLevel = roleLevel
 		self.tariff = tariff
-		self.token = token
+		self.ip = ip
 	}
 }

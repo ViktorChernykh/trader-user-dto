@@ -1,6 +1,6 @@
 //
 //  Lang.swift
-//
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 06/03/2024.
 //

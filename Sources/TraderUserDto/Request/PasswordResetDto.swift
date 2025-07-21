@@ -1,6 +1,6 @@
 //
 //  PasswordResetDto.swift
-//  UserDto
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 15.07.2022.
 //

@@ -1,6 +1,6 @@
 //
 //  UserListDto.swift
-//  UserDto
+//  TraderUserDto
 //
 //  Created by Victor Chernykh on 03.08.2022.
 //
