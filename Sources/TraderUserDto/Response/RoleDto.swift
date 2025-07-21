@@ -11,7 +11,7 @@ public struct RoleDto: Codable, Sendable {
 
     // MARK: Stored properties
     public let id: UUID
-    public let roleLevel: Int
+    public let roleLevel: UInt8
     public let description: String
     public let permissions: [String: String]
     public let title: String
@@ -19,7 +19,7 @@ public struct RoleDto: Codable, Sendable {
     // MARK: - Init
     public init(
         id: UUID = UUID(),
-		roleLevel: Int,
+		roleLevel: UInt8,
         description: String,
         permissions: [String: String],
         title: String
