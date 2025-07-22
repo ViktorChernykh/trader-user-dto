@@ -15,7 +15,7 @@ public enum Tariff: String, Codable, Sendable {
 	case traderPro
 	case quantElite
 
-	public var level: Int {
+	public var level: UInt8 {
 		switch self {
 		case .free: 0
 		case .starter: 1
