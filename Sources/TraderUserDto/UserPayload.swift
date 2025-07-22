@@ -16,7 +16,7 @@ public struct UserPayload: Codable, Sendable {
 	public let sub: UUID
 	public let firstName: String
 	public let lang: Lang
-	public let roleLevel: UInt16
+	public let roleLevel: Int16
 	public let tariff: Tariff
 	public let ip: String?
 
@@ -26,7 +26,7 @@ public struct UserPayload: Codable, Sendable {
 		sub: UUID,
 		firstName: String,
 		lang: Lang,
-		roleLevel: UInt16,
+		roleLevel: Int16,
 		tariff: Tariff,
 		ip: String?
 	) {

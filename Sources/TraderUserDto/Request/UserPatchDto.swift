@@ -12,14 +12,14 @@ public struct UserPatchDto: Codable, Sendable {
     public let isBlock: Bool?
     public let firstName: String?
     public let lastName: String?
-    public let roleLevel: UInt16?
+    public let roleLevel: Int16?
 
     // MARK: - Init
     public init(
         isBlock: Bool? = nil,
         firstName: String? = nil,
         lastName: String? = nil,
-		roleLevel: UInt16? = nil
+		roleLevel: Int16? = nil
     ) {
         self.isBlock = isBlock
         self.firstName = firstName
@@ -51,7 +51,7 @@ extension UserPatchDto {
 			isBlock: values[0] == "" ? nil : values[0] == "1",
 			firstName: values[1] == "" ? nil : values[1],
 			lastName: values[2] == "" ? nil : values[2],
-			roleLevel: UInt16(values[3])
+			roleLevel: Int16(values[3])
 		)
 	}
 }
