@@ -15,7 +15,7 @@ public struct UserListDto: Codable, Sendable {
     public let email: String?
     public let page: Int?
     public let per: Int?
-	public let roleLevel: UInt8?
+	public let roleLevel: UInt16?
 	public let tariff: Tariff?
 	public let createdFrom: Date?
 	public let createdTo: Date?
@@ -28,7 +28,7 @@ public struct UserListDto: Codable, Sendable {
 		email: String?,
 		page: Int?,
 		per: Int?,
-		roleLevel: UInt8?,
+		roleLevel: UInt16?,
 		tariff: Tariff?,
 		createdFrom: Date?,
 		createdTo: Date?,
@@ -97,7 +97,7 @@ extension UserListDto {
 			email: values[1] == "" ? nil : values[1],
 			page: Int(values[2]),
 			per: Int(values[3]),
-			roleLevel: UInt8(values[4]),
+			roleLevel: UInt16(values[4]),
 			tariff: Tariff(rawValue: values[5]),
 			createdFrom: createdFrom,
 			createdTo: createdTo,
