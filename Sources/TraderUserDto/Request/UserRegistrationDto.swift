@@ -5,7 +5,7 @@
 //  Created by Victor Chernykh on 07.07.2022.
 //
 
-/// Data transfer object with data for user registration
+/// Data transfer object with data for user registration.
 public struct UserRegistrationDto: Codable, Sendable {
 
     // MARK: Stored properties

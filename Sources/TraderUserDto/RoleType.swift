@@ -18,7 +18,7 @@ public enum RoleType: String, Codable, Sendable {
 	case owner
 	case system
 
-	public var value: UInt8 {
+	public var value: UInt16 {
 		switch self {
 		case .guest: 0
 		case .client: 1

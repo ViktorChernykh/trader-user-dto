@@ -5,6 +5,7 @@
 //  Created by Victor Chernykh on 23.08.2024.
 //
 
+/// Data transfer object for create a new group.
 public struct GroupCreateDto: Codable, Sendable {
 
 	// MARK: Stored properties

@@ -5,7 +5,7 @@
 //  Created by Victor Chernykh on 22.07.2022.
 //
 
-/// Data transfer object to repeat email for confirmation
+/// Data transfer object to repeat email for confirmation.
 public struct RepeatEmailConfirmationDto: Codable, Sendable {
 
     // MARK: Stored properties

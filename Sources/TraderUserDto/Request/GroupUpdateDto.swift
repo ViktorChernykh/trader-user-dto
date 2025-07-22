@@ -7,6 +7,7 @@
 
 import struct Foundation.UUID
 
+/// Data transfer object for update group.
 public struct GroupUpdateDto: Codable, Sendable {
 
 	// MARK: Stored properties

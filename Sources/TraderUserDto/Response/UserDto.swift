@@ -7,7 +7,7 @@
 
 import struct Foundation.UUID
 
-/// User public data
+/// User public data.
 public struct UserDto: Codable, Sendable {
 
     // MARK: Stored properties

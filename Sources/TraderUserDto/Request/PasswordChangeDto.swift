@@ -5,7 +5,7 @@
 //  Created by Victor Chernykh on 12.07.2022.
 //
 
-/// Data transfer object with data for change password
+/// Data transfer object with data for change password.
 public struct PasswordChangeDto: Codable, Sendable {
 
     // MARK: Stored properties
