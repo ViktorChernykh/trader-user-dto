@@ -11,25 +11,29 @@ import struct Foundation.UUID
 public struct TokenDto: Codable, Sendable {
 
     // MARK: Stored properties
-	/// Refresh token.
-	public let r: String
 	/// Access token.
 	public let a: String
 	/// Access expired at seconds from UNIX Epoch.
-	public let e: UInt32
+	public let ea: UInt32
+	/// Refresh token.
+	public let r: String
+	/// Refresh expired at seconds from UNIX Epoch.
+	public let er: UInt32
 	/// User ID.
     public let u: UUID
 
     // MARK: - Init
     public init(
-		refresh: String,
 		access: String,
-		expiredAt: UInt32,
+		accessExpiredAt: UInt32,
+		refresh: String,
+		refreshExpiredAt: UInt32,
 		userId: UUID
 	) {
-        self.a = access
-        self.r = refresh
-        self.u = userId
-        self.e = expiredAt
+        a = access
+		ea = accessExpiredAt
+        r = refresh
+		er = refreshExpiredAt
+        u = userId
     }
 }

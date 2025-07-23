@@ -19,7 +19,7 @@ public struct AccessDto: Codable, Sendable {
 		access: String,
 		expiredAt: UInt32
 	) {
-		self.a = access
-		self.e = expiredAt
+		a = access
+		e = expiredAt
 	}
 }
