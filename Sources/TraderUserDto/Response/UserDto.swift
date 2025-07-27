@@ -16,7 +16,7 @@ public struct UserDto: Codable, Sendable {
     public var firstName: String
     public var lastName: String?
 	public var lang: Lang
-	public var tariff: Tariff
+	public var tariff: Int16
 
     // MARK: - Init
     public init(
@@ -25,7 +25,7 @@ public struct UserDto: Codable, Sendable {
         firstName: String = "",
         lastName: String? = nil,
 		lang: Lang = .en,
-		tariff: Tariff = .free
+		tariff: Int16 = 0
     ) {
         self.id = id
         self.email = email

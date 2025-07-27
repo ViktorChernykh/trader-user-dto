@@ -21,7 +21,7 @@ public struct AdminDto: Codable, Sendable {
 	public var lang: Lang
     public var roleLevel: Int16
 	public var siwaIdentifier: String?
-    public var tariff: Tariff
+    public var tariff: Int16
 	public var tryAt: Date
 	public var tryCount: Int
     public var twoFactorEnabled: Bool
@@ -39,7 +39,7 @@ public struct AdminDto: Codable, Sendable {
 		lang: Lang = .en,
 		roleLevel: Int16 = 1,	// client
 		siwaIdentifier: String? = nil,
-		tariff: Tariff = .free,
+		tariff: Int16 = 0,
 		tryAt: Date = .init(),
 		tryCount: Int = 0,
 		twoFactorEnabled: Bool = false,

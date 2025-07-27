@@ -16,7 +16,7 @@ public struct UserListDto: Codable, Sendable {
     public let page: Int?
     public let per: Int?
 	public let roleLevel: Int16?
-	public let tariff: Tariff?
+	public let tariff: Int16?
 	public let createdFrom: Date?
 	public let createdTo: Date?
 	public let updatedFrom: Date?
@@ -29,7 +29,7 @@ public struct UserListDto: Codable, Sendable {
 		page: Int?,
 		per: Int?,
 		roleLevel: Int16?,
-		tariff: Tariff?,
+		tariff: Int16?,
 		createdFrom: Date?,
 		createdTo: Date?,
 		updatedFrom: Date?,
@@ -57,7 +57,7 @@ extension UserListDto {
 		let _page: String = if let page { "\(page)" } else { "" }
 		let _per: String = if let per { "\(per)" } else { "" }
 		let _roleLevel: String = roleLevel == nil ? "" : "\(roleLevel!)"
-		let _tariff: String = tariff?.rawValue ?? ""
+		let _tariff: String = .init(tariff ?? 0)
 		let _createdFrom: String = createdFrom == nil ? "" : "\(createdFrom!.timeIntervalSince1970)"
 		let _createdTo: String = createdTo == nil ? "" : "\(createdTo!.timeIntervalSince1970)"
 		let _updatedFrom: String = updatedFrom == nil ? "" : "\(updatedFrom!.timeIntervalSince1970)"
@@ -98,7 +98,7 @@ extension UserListDto {
 			page: Int(values[2]),
 			per: Int(values[3]),
 			roleLevel: Int16(values[4]),
-			tariff: Tariff(rawValue: values[5]),
+			tariff: Int16(values[5]),
 			createdFrom: createdFrom,
 			createdTo: createdTo,
 			updatedFrom: updatedFrom,

@@ -18,6 +18,18 @@ public enum RoleType: String, Codable, Sendable {
 	case owner
 	case system
 
+	public init(rawValue: Int16) {
+		switch rawValue {
+		case 1: self = .client
+		case 5: self = .manager1
+		case 6: self = .manager2
+		case 7: self = .admin
+		case 8: self = .owner
+		case 9: self = .system
+		default: self = .guest
+		}
+	}
+
 	public var value: Int16 {
 		switch self {
 		case .guest: 0

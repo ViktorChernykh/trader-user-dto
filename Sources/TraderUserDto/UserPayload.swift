@@ -17,7 +17,7 @@ public struct UserPayload: Codable, Sendable {
 	public let firstName: String
 	public let lang: Lang
 	public let roleLevel: Int16
-	public let tariff: Tariff
+	public let tariff: Int16
 	public let ip: String?
 
 	// MARK: - Init
@@ -27,7 +27,7 @@ public struct UserPayload: Codable, Sendable {
 		firstName: String,
 		lang: Lang,
 		roleLevel: Int16,
-		tariff: Tariff,
+		tariff: Int16,
 		ip: String?
 	) {
 		self.jti = jti
